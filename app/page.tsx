@@ -6,10 +6,10 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold">三角ロジック組立演習システム</h1>
       <Link href="/problem">
-        <Button className="mt-40">演習スタート</Button>
+        <Button className="mt-32">演習スタート</Button>
       </Link>
       <Link href="/problem-creation">
-        <Button className="mt-10">作問スタート</Button>
+        <Button className="mt-4">作問スタート</Button>
       </Link>
       <Link href="/login">
         <Button variant="secondary" className="mt-10">ログイン</Button>
