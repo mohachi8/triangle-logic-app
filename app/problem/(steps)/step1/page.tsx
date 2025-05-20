@@ -9,11 +9,18 @@ export default function ProblemStep1Page() {
       <div className="space-y-4">
         <p>以下の論証を読んで下さい。</p>
         <ArgumentCard />
-        <Link href="/problem/step2">
-          <Button className="mt-4">
-            次へ
-          </Button>
-        </Link>
+        <div className="flex gap-4">
+          <Link href="/problem">
+            <Button>
+              前へ
+            </Button>
+          </Link>
+          <Link href="/problem/step2">
+            <Button>
+              次へ
+            </Button>
+          </Link>
+        </div>
       </div>
     </>
   )
