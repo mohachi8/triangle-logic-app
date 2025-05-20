@@ -1,17 +1,19 @@
-"use client"
-
-import { useProblemStore } from "@/store/problemStore";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import ArgumentCard from "@/components/problem/ArgumentCard";
 
 export default function ProblemStep1Page() {
-  const selectedProblemId = useProblemStore((state) => state.selectedProblemId);
-
   return (
     <>
       <h1 className="text-2xl font-bold mb-4">演習 ステップ1</h1>
       <div className="space-y-4">
-        <p>ここに問題文が入ります。</p>
-        <p>問題の説明や条件など...</p>
-        <p>現在選択されている問題ID: {selectedProblemId ?? 'なし'}</p>
+        <p>以下の論証を読んで下さい。</p>
+        <ArgumentCard />
+        <Link href="/problem/step2">
+          <Button className="mt-4">
+            次へ
+          </Button>
+        </Link>
       </div>
     </>
   )

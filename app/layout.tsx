@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={notoSansJP.className} suppressHydrationWarning>
+    <html lang="en" className={notoSansJP.className} suppressHydrationWarning>
       <body>
         {children}
       </body>
